@@ -1,0 +1,25 @@
+﻿@model Book
+<form asp-controller="Book" asp-action="Create" method="post">
+   
+    <div class="mb-3 form-check">
+        <label asp-for="Title" class="form-check-label">Başlık</label>
+        <input  asp-for="Title" type="text" class="form-control" >
+       
+    </div>
+    <div class="mb-3 form-check">
+    <label asp-for="Description" class="form-check-label">Açıklama</label>
+    <input asp-for="Description" type="text" class="form-control">
+
+    </div>
+    <div class="mb-3 form-check">
+    <label asp-for="Author" class="form-check-label">Yazar</label>
+    <input asp-for="Author" type="text" class="form-control">
+
+    </div>
+   <div class="mb-3 form-check">
+    <label asp-for="Publisher" class="form-check-label">Yayın Evi</label>
+    <input asp-for="Publisher" type="text" class="form-control">
+
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

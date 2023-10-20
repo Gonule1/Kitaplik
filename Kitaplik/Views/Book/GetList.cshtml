@@ -1,0 +1,25 @@
+﻿@model List<Book>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Başlık</th>
+            <th scope="col">Açıklama</th>
+            <th scope="col">Yazar Adı</th>
+            <th scope="col">Yayın Evi</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(Book book in Model)// @ işareti ile c# kodunu dahil ediyoruz
+        {
+        <tr>
+            <th scope="row">@book.Id</th>
+            <td>@book.Title</td>
+            <td>@book.Description</td>
+            <td>@book.Author</td>
+            <td>@book.Publisher</td>
+        </tr>
+        }
+     
+    </tbody>
+</table>
